@@ -1,13 +1,19 @@
-
+/**
+ * Creates an object that can print a Document
+ * @author Michael Norton (CSCE 247-001)
+ *
+ */
 public class PrintCommand implements Command {
 
-	public PrintCommand() {
-		// TODO Auto-generated constructor stub
+	private Document doc;
+	
+	public PrintCommand(Document doc) {
+		this.doc = doc;
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+		doc.print();
 
 	}
 
