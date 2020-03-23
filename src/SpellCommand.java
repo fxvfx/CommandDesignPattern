@@ -1,14 +1,18 @@
-
+/**
+ * Checks an object for spelling errors 
+ * @author Tariq Scott
+ * @param doc
+ */
 public class SpellCommand implements Command {
+	private Document doc;
 
-	public SpellCommand() {
-		// TODO Auto-generated constructor stub
+	public SpellCommand(Document doc) {
+		this.doc = doc;
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-
+		doc.spell();
 	}
 
 }

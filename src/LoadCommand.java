@@ -1,14 +1,19 @@
-
+/**
+ * Creates an object that loads the document.
+ * @author Tariq Scott
+ *	@param doc
+ *	@return 
+ */
 public class LoadCommand implements Command {
-
-	public LoadCommand() {
-		// TODO Auto-generated constructor stub
+	private Document doc;
+	
+	public LoadCommand(Document doc) {
+		this.doc = doc;
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-
+		doc.load();
 	}
 
 }
