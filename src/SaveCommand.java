@@ -4,14 +4,14 @@
  *
  */
 public class SaveCommand implements Command {
+	private Document doc;
 	
-	public SaveCommand() {
-		// TODO Auto-generated constructor stub
+	public SaveCommand(Document doc) {
+		this.doc = doc;
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
-
+		doc.save();
 	}
 }

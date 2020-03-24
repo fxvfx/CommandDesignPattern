@@ -14,8 +14,8 @@ public class InputHandler {
 		
 		// Initialize individual commands & insert them into the commands HashMap
 		commands.put("load", new LoadCommand(document));
-		commands.put("save", new SpellCommand(document));
-		commands.put("spell", new SaveCommand(document));
+		commands.put("save", new SaveCommand(document));
+		commands.put("spell", new SpellCommand(document));
 		commands.put("print", new PrintCommand(document));
 	}
 	
