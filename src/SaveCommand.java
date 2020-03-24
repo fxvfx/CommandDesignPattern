@@ -1,17 +1,19 @@
 /**
  * Saves a document
  * @author Francis Villanueva
+ * edited by Hannah Killian 03.24.2020
  *
  */
 public class SaveCommand implements Command {
-	
-	public SaveCommand() {
-		// TODO Auto-generated constructor stub
+	private Document doc;
+
+	public SaveCommand(Document doc) {
+		this.doc = doc;
 	}
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+		doc.save();
 
 	}
 }
