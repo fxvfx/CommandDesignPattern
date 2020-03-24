@@ -1,6 +1,10 @@
-
+/**
+ * Saves a document
+ * @author Francis Villanueva
+ *
+ */
 public class SaveCommand implements Command {
-
+	
 	public SaveCommand() {
 		// TODO Auto-generated constructor stub
 	}
@@ -10,5 +14,4 @@ public class SaveCommand implements Command {
 		// TODO Auto-generated method stub
 
 	}
-
 }

@@ -25,7 +25,7 @@ public class InputHandler {
 	 */
 	public void inputEntered(String data) {
 		if(commands.containsKey(data)) //does not deal with case sensitivity
-			commands.get(data);
+			commands.get(data).execute();
 		else
 			System.out.println("Sorry, we don't recognize that command");
 	}
